@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { getSettings } from "@/lib/settings";
@@ -85,6 +86,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             }),
           }}
         />
+        <SpeedInsights />
       </body>
     </html>
   );
